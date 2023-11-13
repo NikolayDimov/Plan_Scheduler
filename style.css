@@ -1,0 +1,280 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 'Inter';
+}
+
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    background-color: #d9d9d9;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+header .nav-items {
+    display: flex;
+}
+
+header .nav-items li {
+    display: block;
+    color: black;
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-bottom: 1.5em;
+}
+
+header .nav-items a,
+header .container a {
+    color: black;
+    font-size: 18px;
+}
+
+header .button {
+    background-color: white;
+    padding: 0.3em 0.7em;
+    border: 1px solid black;
+    border-radius: 0.3em;
+}
+
+/* HERO */
+
+.hero {
+    background-image: url(../images/background.jpg);
+    /* background-size: contain; */
+    background-position: center -20em;
+    background-repeat: no-repeat;
+}
+
+.hero .container {
+    margin-left: 18em;
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+
+.hero .hero-title {
+    font-size: 44px;
+    padding-bottom: 2em;
+    max-width: 15ch;
+}
+
+.hero .container .hero-desc {
+    font-size: 26px;
+    color: white;
+    max-width: 55ch;
+    padding-bottom: 2em;
+}
+
+.hero .container .hero-button {
+    color: white;
+    background-color: black;
+    padding: 1em 2.2em;
+    border-radius: 0.3em;
+}
+
+/* FEATURES */
+
+.features .container {
+    display: flex;
+    gap: 0.8em;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+
+.features .container .features-item {
+    text-align: center;
+    padding: 7em 0 4em 0;
+}
+
+.features .container .features-item h3 {
+    color: #ff8052;
+    font-size: 50px;
+    padding-bottom: 0.5em;
+}
+
+.features .container .features-item .bold {
+    font-size: 22px;
+    padding-bottom: 0.2em;
+}
+
+.features .container .features-item .small {
+    font-size: 12px;
+}
+
+/* ENTERPRISE */
+
+.enterprise {
+    background-color: #d9d9d9;
+}
+
+.enterprise .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 3em 2em 3em 2em;
+}
+
+.enterprise .container .enterprise-item {
+    display: flex;
+    gap: 2em;
+}
+
+.enterprise .container .enterprise-item .media {
+    flex: 0 0 38%;
+}
+
+.enterprise .container .enterprise-item .content {
+    max-height: 100%;
+    padding-top: 2em;
+}
+
+.enterprise .content h5 {
+    color: #7d7d7d;
+    font-size: 20px;
+    margin-bottom: 2em;
+}
+
+.enterprise .content h3 {
+    font-size: 40px;
+    margin-bottom: 1.1em;
+}
+
+.enterprise .content .enterprise-desc {
+    color: #7a8ba1;
+    margin-bottom: 0.2em;
+    font-size: 18px;
+}
+
+.enterprise .content a {
+    color: black;
+    font-size: 20px;
+    padding-bottom: 3em;
+}
+
+.enterprise .content .posted-by {
+    margin-top: 3.5em;
+    color: #7a8ba1;
+}
+
+/* PRICING PLANS */
+
+.plans {
+    background-color: #f5f5f5;
+}
+
+.plans .container {
+    background-color: white;
+    display: flex;
+    gap: 0.2em;
+    justify-content: center;
+    padding: 3em;
+}
+
+.plans .container .pricing-plan {
+    flex: 0 0 30%;
+    margin: 2em;
+}
+
+.plans .container .pricing-plan.second {
+    background-color: #ff7c4c;
+    text-align: center;
+}
+
+.plans .container .pricing-plan.third {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.plans .container .pricing-plan ul {
+    list-style: none;
+}
+
+.plans .container .pricing-plan .main {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 1.2em;
+    margin-top: 0.8em;
+}
+
+.plans .container .pricing-plan .value {
+    font-size: 68px;
+    margin-bottom: 0.2em;
+}
+
+.plans .container .pricing-plan span {
+    font-weight: bold;
+}
+
+.plans .container .pricing-plan li {
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+.plans .container .pricing-plan li:last-child {
+    margin-bottom: 3em;
+}
+
+.plans .container .pricing-plan .button {
+    display: inline-block;
+    color: white;
+    padding: 1em 2em;
+    background-color: black;
+    margin-bottom: 2em;
+    border-radius: 0.3em;
+}
+
+.plans .container .first .main {
+    font-size: 38px;
+}
+
+.plans .first .pricing-desc {
+    font-size: 20px;
+    color: #7a8ba1;
+}
+
+
+/* FOOTER */
+
+.socials {
+    background-color: #d9d9d9;
+}
+
+footer .container ul {
+    display: flex;
+}
+
+footer .container ul li {
+    display: block;
+    margin: 0 auto;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    font-size: 24px;
+}
